@@ -207,7 +207,7 @@ namespace Asistente_De_Voz
                 case "apagarequipo":
                     sonido.URL = @"Media\Audio\google.wav";
                     sonido.controls.play();
-                    System.Diagnostics.Process.Start("Shutdown.exe");
+                    System.Diagnostics.Process.Start("shutdown -s -t 01");
                     break;
 
                 //--------------------------------------Fin De La Lineas De Comandos---------------------------------------------//
