@@ -17,7 +17,7 @@ namespace Asistente_De_Voz
     public partial class Form1 : Form
     {
         WindowsMediaPlayer sonido = new WindowsMediaPlayer();
-        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
+        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("es-ES"));
         string opc;
         public Form1()
         {
