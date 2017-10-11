@@ -17,7 +17,7 @@ namespace Asistente_De_Voz
     public partial class Form1 : Form
     {
         WindowsMediaPlayer sonido = new WindowsMediaPlayer();
-        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("es-ES"));
+        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("es-MX"));
         string opc;
         public Form1()
         {
@@ -78,12 +78,6 @@ namespace Asistente_De_Voz
 
         private void Detener_Click(object sender, EventArgs e)
         {
-            if (Activar.BackColor != Color.Green)
-            {
-                MessageBox.Show("El Asistente Esta Desactivado", "Active El Asistente", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
                 resultado.Text = "OFF";
                 resultado.BackColor = Color.Red;
                 Detener.Visible = false;
@@ -94,7 +88,6 @@ namespace Asistente_De_Voz
                 sonido.URL = @"Media\Audio\detener.wav";
                 sonido.controls.play();
                 _recognizer.RecognizeAsyncStop();
-            }
         }
         public void _recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
@@ -214,7 +207,7 @@ namespace Asistente_De_Voz
                 case "apagarequipo":
                     sonido.URL = @"Media\Audio\google.wav";
                     sonido.controls.play();
-                    System.Diagnostics.Process.Start("shutdown");
+                    System.Diagnostics.Process.Start("Shutdown.exe");
                     break;
 
                 //--------------------------------------Fin De La Lineas De Comandos---------------------------------------------//
