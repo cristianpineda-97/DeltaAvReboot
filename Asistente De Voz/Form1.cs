@@ -27,7 +27,7 @@ namespace Asistente_De_Voz
             label3.Visible = false;
             resultado.Text = "OFF";
             resultado.BackColor = Color.Red;
-            sonido.URL = @"Media\Audio\hola.wav";
+            sonido.URL = @"Media\Audio\HolaAbrir.mp3";
             sonido.controls.play();
         }
 
@@ -37,12 +37,12 @@ namespace Asistente_De_Voz
             {
                 if (resultado.Text == "OFF")
                 {
-                    sonido.URL = @"Media\Audio\hola2.wav";
+                    sonido.URL = @"Media\Audio\HolaActivado.mp3";
                     sonido.controls.play();
                 }
                 else if (resultado.Text == "ON")
                 {
-                    sonido.URL = @"Media\Audio\hola2.wav";
+                    sonido.URL = @"Media\Audio\HolaActivado.mp3";
                     sonido.controls.stop();
                 }
                 resultado.Text = "ON";
@@ -85,7 +85,7 @@ namespace Asistente_De_Voz
                 Activar.Visible = true;
                 label2.Visible = true;
                 Detener.BackColor = Color.Red;
-                sonido.URL = @"Media\Audio\detener.wav";
+                sonido.URL = @"Media\Audio\Detener.mp3";
                 sonido.controls.play();
                 _recognizer.RecognizeAsyncStop();
         }
@@ -97,117 +97,117 @@ namespace Asistente_De_Voz
                 //-----------------------------esto ya es para los comandos Todos Con If------------------------------------------//
 
                 case "abrirgoogle":
-                    sonido.URL = @"Media\Audio\google.wav";
+                    sonido.URL = @"Media\Audio\AbrirNavegador.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("chrome.exe");
                     break;
 
                 case "abrirexcel":
-                    sonido.URL = @"Media\Audio\excel.wav";
+                    sonido.URL = @"Media\Audio\AbrirExcel.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("excel.exe");
                     break;
 
                 case "abrirword":
-                    sonido.URL = @"Media\Audio\word.wav";
+                    sonido.URL = @"Media\Audio\AbrirWord.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("winword.exe");
                     break;
 
                 case "adiosdelta":
-                    sonido.URL = @"Media\Audio\adiosdelta.wav";
+                    sonido.URL = @"Media\Audio\Adios.mp3";
                     sonido.controls.play();
                     Application.Exit();
                     break;
 
                 case "abrirblocdenotas":
-                    sonido.URL = @"Media\Audio\notepad.wav";
+                    sonido.URL = @"Media\Audio\AbrirBlocDeNotas.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("notepad.exe");
                     break;
 
                 case "abriryoutube":
-                    sonido.URL = @"Media\Audio\youtube.wav";
+                    sonido.URL = @"Media\Audio\AbrirYoutube.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("http://www.youtube.com");
                     break;
 
                 case "abrirfacebook":
-                    sonido.URL = @"Media\Audio\facebook.wav";
+                    sonido.URL = @"Media\Audio\AbrirFacebook.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("http://www.facebook.com");
                     break;
 
                 case "abrirmusica":
-                    sonido.URL = @"Media\Audio\wmp.wav";
+                    sonido.URL = @"Media\Audio\AbrirMusica.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("wmplayer.exe");
                     break;
 
                 case "DeltaQueesUnAndroid":
-                    sonido.URL = @"Media\Audio\android.wav";
+                    sonido.URL = @"Media\Audio\QueEsAndroid.mp3";
                     sonido.controls.play();
                     break;
 
                 case "abrirwhatsappweb":
-                    sonido.URL = @"Media\Audio\whatsapp.wav";
+                    sonido.URL = @"Media\Audio\AbrirWhatsapp.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("https://web.whatsapp.com");
                     break;
 
                 case "holadelta":
-                    sonido.URL = @"Media\Audio\holadelta.wav";
+                    sonido.URL = @"Media\Audio\HolaSaludo.mp3";
                     sonido.controls.play();
                     break;
 
                 case "comoestas":
-                    sonido.URL = @"Media\Audio\gracias.wav";
+                    sonido.URL = @"Media\Audio\PuesMuyBien.mp3";
                     sonido.controls.play();
                     break;
 
                 case "muybien":
-                    sonido.URL = @"Media\Audio\bien.wav";
+                    sonido.URL = @"Media\Audio\MeAlegroQueEsteBien.mp3";
                     sonido.controls.play();
                     break;
                 case "puesmuybien":
-                    sonido.URL = @"Media\Audio\bien.wav";
+                    sonido.URL = @"Media\Audio\MeAlegroQueEsteBien.mp3";
                     sonido.controls.play();
                     break;
 
                 case "abrirpaneldecontrol":
-                    sonido.URL = @"Media\Audio\google.wav";
+                    sonido.URL = @"Media\Audio\AbrirPanelDeControl.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("control");
                     break;
 
                 case "abrirpropiedadesdefechayhora":
-                    sonido.URL = @"Media\Audio\google.wav";
+                    sonido.URL = @"Media\Audio\AbrirConfigFechaYHora.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("timedate.cpl");
                     break;
 
                 case "abrirpropiedadesdepantalla":
-                    sonido.URL = @"Media\Audio\google.wav";
+                    sonido.URL = @"Media\Audio\AbrirPropiePantalla.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("desk.cpl");
                     break;
 
                 case "abrircalculadora":
-                    sonido.URL = @"Media\Audio\google.wav";
+                    sonido.URL = @"Media\Audio\AbrirCalculadora.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("calc");
                     break;
 
                 case "abrirpaint":
-                    sonido.URL = @"Media\Audio\google.wav";
+                    sonido.URL = @"Media\Audio\AbrirPaint.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("mspaint");
                     break;
 
                 case "apagarequipo":
-                    sonido.URL = @"Media\Audio\google.wav";
+                    sonido.URL = @"Media\Audio\ApagarEquipo.mp3";
                     sonido.controls.play();
-                    System.Diagnostics.Process.Start("shutdown -s -t 01");
+                    System.Diagnostics.Process.Start("shutdown", "-s");
                     break;
 
                 //--------------------------------------Fin De La Lineas De Comandos---------------------------------------------//
