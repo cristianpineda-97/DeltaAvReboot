@@ -6,17 +6,20 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using System.Speech.Recognition;
 using System.Speech.Synthesis;
 using System.IO;
 using WMPLib;
+using Asistente_De_Voz.Media;
 
 namespace Asistente_De_Voz
 {
     public partial class Form1 : Form
     {
         WindowsMediaPlayer sonido = new WindowsMediaPlayer();
+        Chistes Chistes = new Chistes();
         SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("es-MX"));
         string opc;
         public Form1()
@@ -53,9 +56,9 @@ namespace Asistente_De_Voz
                 label2.Visible = false;
                 Detener.BackColor = Color.Red;
                 _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"Media\comandos.txt")))));
-                _recognizer.SpeechRecognized += _recognizer_SpeechRecognized;
                 _recognizer.SetInputToDefaultAudioDevice();
                 _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+                _recognizer.SpeechRecognized += _recognizer_SpeechRecognized;
 
             }
             catch (Exception error)
@@ -67,8 +70,6 @@ namespace Asistente_De_Voz
                 resultado.BackColor = Color.Red;
                 MessageBox.Show(error.Message, "Se Ha Encontrado Un Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
-
-
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -165,11 +166,11 @@ namespace Asistente_De_Voz
                     sonido.controls.play();
                     break;
 
-                case "muybien":
+                case "muybien...":
                     sonido.URL = @"Media\Audio\MeAlegroQueEsteBien.mp3";
                     sonido.controls.play();
                     break;
-                case "puesmuybien":
+                case "puesmuybien...":
                     sonido.URL = @"Media\Audio\MeAlegroQueEsteBien.mp3";
                     sonido.controls.play();
                     break;
@@ -207,7 +208,17 @@ namespace Asistente_De_Voz
                 case "apagarequipo":
                     sonido.URL = @"Media\Audio\ApagarEquipo.mp3";
                     sonido.controls.play();
-                    System.Diagnostics.Process.Start("shutdown", "-s");
+                    System.Diagnostics.Process.Start("shutdown", "-1");
+                    break;
+                    
+                case "DeltaCuentameUnChiste":
+                    Chistes.Chiste();
+                    break;
+
+                case "abrirPowerPoint":
+                    sonido.URL = @"Media\Audio\AbrirPowerPoint.mp3";
+                    sonido.controls.play();
+                    System.Diagnostics.Process.Start("POWERPNT");
                     break;
 
                 //--------------------------------------Fin De La Lineas De Comandos---------------------------------------------//

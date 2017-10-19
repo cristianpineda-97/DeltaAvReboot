@@ -18,3 +18,5 @@ abrirpropiedadesdepantalla
 abrircalculadora
 abrirpaint
 apagarequipo
+DeltaCuentameUnChiste
+abrirPowerPoint
