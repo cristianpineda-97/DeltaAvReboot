@@ -19,4 +19,5 @@ abrircalculadora
 abrirpaint
 apagarequipo
 DeltaCuentameUnChiste
+DeltaCuentameUnColmo
 abrirPowerPoint

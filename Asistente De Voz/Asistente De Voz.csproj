@@ -100,7 +100,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Media\Chistes.cs" />
+    <Compile Include="Media\Chistes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Media\Colmos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.es-MX.resx">

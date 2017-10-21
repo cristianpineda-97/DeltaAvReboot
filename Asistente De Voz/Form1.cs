@@ -18,8 +18,7 @@ namespace Asistente_De_Voz
 {
     public partial class Form1 : Form
     {
-        WindowsMediaPlayer sonido = new WindowsMediaPlayer();
-        Chistes Chistes = new Chistes();
+        public static WindowsMediaPlayer sonido = new WindowsMediaPlayer();
         SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("es-MX"));
         string opc;
         public Form1()
@@ -212,7 +211,11 @@ namespace Asistente_De_Voz
                     break;
                     
                 case "DeltaCuentameUnChiste":
-                    Chistes.Chiste();
+                    Media.Chistes.Chiste();
+                    break;
+
+                case "DeltaCuentameUnColmo":
+                    Media.Colmos.Colmo();
                     break;
 
                 case "abrirPowerPoint":
