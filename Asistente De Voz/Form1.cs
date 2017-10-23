@@ -29,10 +29,10 @@ namespace Asistente_De_Voz
             label3.Visible = false;
             resultado.Text = "OFF";
             resultado.BackColor = Color.Red;
+            AudioNivel.Visible = false;
             sonido.URL = @"Media\Audio\HolaAbrir.mp3";
             sonido.controls.play();
         }
-
         private void Activar_Click(object sender, EventArgs e)
         {
             try
@@ -54,10 +54,12 @@ namespace Asistente_De_Voz
                 Activar.Visible = false;
                 label2.Visible = false;
                 Detener.BackColor = Color.Red;
+                AudioNivel.Visible = true;
                 _recognizer.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines(@"Media\comandos.txt")))));
                 _recognizer.SetInputToDefaultAudioDevice();
                 _recognizer.RecognizeAsync(RecognizeMode.Multiple);
                 _recognizer.SpeechRecognized += _recognizer_SpeechRecognized;
+                _recognizer.AudioLevelUpdated += new EventHandler<AudioLevelUpdatedEventArgs>(MedidorDeAudios);
 
             }
             catch (Exception error)
@@ -67,15 +69,18 @@ namespace Asistente_De_Voz
                 Detener.BackColor = Color.Green;
                 resultado.Text = "OFF";
                 resultado.BackColor = Color.Red;
+                AudioNivel.Visible = false;
                 MessageBox.Show(error.Message, "Se Ha Encontrado Un Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Application.Exit();
         }
-
+        private void MedidorDeAudios(object s, AudioLevelUpdatedEventArgs e)
+        {
+            AudioNivel.Value = e.AudioLevel;
+        }
         private void Detener_Click(object sender, EventArgs e)
         {
                 resultado.Text = "OFF";
@@ -84,6 +89,7 @@ namespace Asistente_De_Voz
                 label3.Visible = false;
                 Activar.Visible = true;
                 label2.Visible = true;
+                AudioNivel.Visible = false;
                 Detener.BackColor = Color.Red;
                 sonido.URL = @"Media\Audio\Detener.mp3";
                 sonido.controls.play();

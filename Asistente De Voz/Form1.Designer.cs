@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.AudioNivel = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -100,12 +101,20 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label3.Name = "label3";
             // 
+            // AudioNivel
+            // 
+            resources.ApplyResources(this.AudioNivel, "AudioNivel");
+            this.AudioNivel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AudioNivel.ForeColor = System.Drawing.Color.Transparent;
+            this.AudioNivel.Name = "AudioNivel";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Asistente_De_Voz.Properties.Resources._18926346_1309854035796351_723634850_o;
+            this.Controls.Add(this.AudioNivel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -133,6 +142,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ProgressBar AudioNivel;
     }
 }
 
