@@ -126,7 +126,7 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="linkLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 9</value>
+    <value>596, 9</value>
   </data>
   <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 16</value>
@@ -160,7 +160,7 @@
     <value>NoControl</value>
   </data>
   <data name="Activar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 63</value>
+    <value>253, 68</value>
   </data>
   <data name="Activar.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 114</value>
@@ -190,7 +190,7 @@
     <value>NoControl</value>
   </data>
   <data name="Detener.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 63</value>
+    <value>253, 68</value>
   </data>
   <data name="Detener.Size" type="System.Drawing.Size, System.Drawing">
     <value>110, 114</value>
@@ -220,16 +220,16 @@
     <value>NoControl</value>
   </data>
   <data name="Estado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 203</value>
+    <value>267, 208</value>
   </data>
   <data name="Estado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 20</value>
+    <value>86, 20</value>
   </data>
   <data name="Estado.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="Estado.Text" xml:space="preserve">
-    <value>ESTADO</value>
+    <value>ESTADO:</value>
   </data>
   <data name="&gt;&gt;Estado.Name" xml:space="preserve">
     <value>Estado</value>
@@ -253,7 +253,7 @@
     <value>NoControl</value>
   </data>
   <data name="resultado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>259, 233</value>
+    <value>289, 238</value>
   </data>
   <data name="resultado.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 16</value>
@@ -289,7 +289,7 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 25</value>
+    <value>248, 30</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 25</value>
@@ -322,7 +322,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 180</value>
+    <value>279, 185</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 13</value>
@@ -355,7 +355,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>238, 180</value>
+    <value>268, 185</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -385,7 +385,7 @@
     <value>NoControl</value>
   </data>
   <data name="AudioNivel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 260</value>
+    <value>239, 267</value>
   </data>
   <data name="AudioNivel.Size" type="System.Drawing.Size, System.Drawing">
     <value>140, 10</value>
@@ -415,7 +415,7 @@
     <value>Stretch</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>554, 397</value>
+    <value>625, 427</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

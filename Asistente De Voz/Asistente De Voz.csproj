@@ -158,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <None Include="Resources\PicsArt_10-21-04.30.30.png" />
     <None Include="Resources\orig_430450.jpg" />
     <None Include="Resources\Captura.PNG" />
     <None Include="Media\1.jpg" />

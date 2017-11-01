@@ -149,5 +149,15 @@ namespace Asistente_De_Voz.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PicsArt_10_21_04_30_30 {
+            get {
+                object obj = ResourceManager.GetObject("PicsArt_10-21-04.30.30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

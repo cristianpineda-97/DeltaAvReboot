@@ -19,7 +19,7 @@ namespace Asistente_De_Voz
     public partial class Form1 : Form
     {
         public static WindowsMediaPlayer sonido = new WindowsMediaPlayer();
-        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("es-MX"));
+        SpeechRecognitionEngine _recognizer = new SpeechRecognitionEngine();
         string opc;
         public Form1()
         {
@@ -102,71 +102,71 @@ namespace Asistente_De_Voz
             {
                 //-----------------------------esto ya es para los comandos Todos Con If------------------------------------------//
 
-                case "abrirgoogle":
+                case "abrirgoogle..":
                     sonido.URL = @"Media\Audio\AbrirNavegador.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("chrome.exe");
                     break;
 
-                case "abrirexcel":
+                case "abrirexcel..":
                     sonido.URL = @"Media\Audio\AbrirExcel.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("excel.exe");
                     break;
 
-                case "abrirword":
+                case "abrirword..":
                     sonido.URL = @"Media\Audio\AbrirWord.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("winword.exe");
                     break;
 
-                case "adiosdelta":
+                case "adiosdelta..":
                     sonido.URL = @"Media\Audio\Adios.mp3";
                     sonido.controls.play();
                     Application.Exit();
                     break;
 
-                case "abrirblocdenotas":
+                case "abrirblocdenotas..":
                     sonido.URL = @"Media\Audio\AbrirBlocDeNotas.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("notepad.exe");
                     break;
 
-                case "abriryoutube":
+                case "abriryoutube..":
                     sonido.URL = @"Media\Audio\AbrirYoutube.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("http://www.youtube.com");
                     break;
 
-                case "abrirfacebook":
+                case "abrirfacebook..":
                     sonido.URL = @"Media\Audio\AbrirFacebook.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("http://www.facebook.com");
                     break;
 
-                case "abrirmusica":
+                case "abrirmusica..":
                     sonido.URL = @"Media\Audio\AbrirMusica.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("wmplayer.exe");
                     break;
 
-                case "DeltaQueesUnAndroid":
+                case "DeltaQueesUnAndroid..":
                     sonido.URL = @"Media\Audio\QueEsAndroid.mp3";
                     sonido.controls.play();
                     break;
 
-                case "abrirwhatsappweb":
+                case "abrirwhatsappweb..":
                     sonido.URL = @"Media\Audio\AbrirWhatsapp.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("https://web.whatsapp.com");
                     break;
 
-                case "holadelta":
+                case "holadelta..":
                     sonido.URL = @"Media\Audio\HolaSaludo.mp3";
                     sonido.controls.play();
                     break;
 
-                case "comoestas":
+                case "comoestas..":
                     sonido.URL = @"Media\Audio\PuesMuyBien.mp3";
                     sonido.controls.play();
                     break;
@@ -180,51 +180,51 @@ namespace Asistente_De_Voz
                     sonido.controls.play();
                     break;
 
-                case "abrirpaneldecontrol":
+                case "abrirpaneldecontrol..":
                     sonido.URL = @"Media\Audio\AbrirPanelDeControl.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("control");
                     break;
 
-                case "abrirpropiedadesdefechayhora":
+                case "abrirpropiedadesdefechayhora..":
                     sonido.URL = @"Media\Audio\AbrirConfigFechaYHora.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("timedate.cpl");
                     break;
 
-                case "abrirpropiedadesdepantalla":
+                case "abrirpropiedadesdepantalla..":
                     sonido.URL = @"Media\Audio\AbrirPropiePantalla.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("desk.cpl");
                     break;
 
-                case "abrircalculadora":
+                case "abrircalculadora..":
                     sonido.URL = @"Media\Audio\AbrirCalculadora.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("calc");
                     break;
 
-                case "abrirpaint":
+                case "abrirpaint..":
                     sonido.URL = @"Media\Audio\AbrirPaint.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("mspaint");
                     break;
 
-                case "apagarequipo":
+                case "apagarequipo..":
                     sonido.URL = @"Media\Audio\ApagarEquipo.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("shutdown", "-1");
                     break;
                     
-                case "DeltaCuentameUnChiste":
+                case "DeltaCuentameUnChiste..":
                     Media.Chistes.Chiste();
                     break;
 
-                case "DeltaCuentameUnColmo":
+                case "DeltaCuentameUnColmo..":
                     Media.Colmos.Colmo();
                     break;
 
-                case "abrirPowerPoint":
+                case "abrirPowerPoint..":
                     sonido.URL = @"Media\Audio\AbrirPowerPoint.mp3";
                     sonido.controls.play();
                     System.Diagnostics.Process.Start("POWERPNT");

@@ -43,8 +43,8 @@
             // linkLabel1
             // 
             resources.ApplyResources(this.linkLabel1, "linkLabel1");
-            this.linkLabel1.BackColor = System.Drawing.Color.Black;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.TabStop = true;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -70,35 +70,36 @@
             // Estado
             // 
             resources.ApplyResources(this.Estado, "Estado");
-            this.Estado.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Estado.ForeColor = System.Drawing.Color.Snow;
+            this.Estado.BackColor = System.Drawing.Color.Transparent;
+            this.Estado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Estado.Name = "Estado";
             // 
             // resultado
             // 
             resources.ApplyResources(this.resultado, "resultado");
-            this.resultado.BackColor = System.Drawing.Color.Snow;
+            this.resultado.BackColor = System.Drawing.Color.Transparent;
+            this.resultado.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.resultado.Name = "resultado";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Name = "label1";
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Name = "label2";
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Name = "label3";
             // 
             // AudioNivel
@@ -113,7 +114,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::Asistente_De_Voz.Properties.Resources._18926346_1309854035796351_723634850_o;
+            this.BackgroundImage = global::Asistente_De_Voz.Properties.Resources.PicsArt_10_21_04_30_30;
             this.Controls.Add(this.AudioNivel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
